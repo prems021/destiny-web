@@ -1,0 +1,190 @@
+
+<span defaultOverlayTarget></span>
+
+
+ <section class="w3-padding-48">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-6">
+                	<h1 class="w3-text-white text-center w3-padding-32" style="font-size: 500%; "><strong>Make Up to $35/hr Driving Your Car</strong></h1>
+                </div>
+                <div class="col-md-6">
+
+                    <form [formGroup]="myForm" novalidate (ngSubmit)="login()" #vazhipadForm="ngForm">
+
+                 
+                 	<div class="col-md-12 w3-white w3-card-4 w3-round-large w3-padding-16">
+                    <h3> Personel Details </h3>
+
+
+                     <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="fame"  placeholder="Legal Firstname"  formControlName="legal_firstname"  required>
+                       
+                       
+                       <small [hidden]="myForm.controls.legal_firstname.valid" class="text-danger">
+                                               Legal Firstname is required (minimum 3 characters).
+                                       </small>
+                  
+                  
+                  
+                    </div>
+
+                     <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="fame"  placeholder="Middle Name"  formControlName="middle_name" >
+                       
+                       
+                      
+                  
+                  
+                    </div>
+                    
+
+                     <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="fame"  placeholder="Legal Lastname"  formControlName="legal_lastname"  required>
+                       
+                       
+                       <small [hidden]="myForm.controls.legal_lastname.valid" class="text-danger">
+                                               Legal lastname is required 
+                                       </small>
+                  
+                  
+                  
+                    </div>
+
+
+
+                    <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="fame"  placeholder="SSN"  formControlName="ssn"  required>
+                       
+                       
+                       <small [hidden]="myForm.controls.ssn.valid" class="text-danger">
+                                             SSN is required (Enter in Numbers).
+                                       </small>
+                  
+                  
+                  
+                    </div>
+
+                    
+
+                            
+
+
+
+
+                    <div class="col-md-12 w3-padding-4 ">
+                                      
+                    
+                            <ng2-datepicker     formControlName="dob" class="form-control input-lg">    </ng2-datepicker>
+
+
+
+                           <small [hidden]="myForm.controls.dob.valid" class="text-danger ">
+                                               Date of birth is required 
+                                       </small>
+                    </div>
+
+
+                    
+
+                    
+                    <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="lame"  placeholder=" License Number"  formControlName="license_num"  required>
+
+                           <small [hidden]="myForm.controls.license_num.valid" class="text-danger">
+                                              Licence Number required. 
+                                       </small>
+                    </div>
+
+                    
+                    <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="lame"  placeholder="License State"  formControlName="license_state"  required>
+
+                           <small [hidden]="myForm.controls.license_state.valid" class="text-danger">
+                                              License State is required.
+                                       </small>
+                    </div>
+                    
+
+
+                 
+                     
+                    <div class="col-md-12 w3-padding-4 ">
+                                      
+                    
+                            <ng2-datepicker1     formControlName="license_expire" class="form-control input-lg">    </ng2-datepicker1>
+
+
+
+                           <small [hidden]="myForm.controls.license_expire.valid" class="text-danger ">
+                                               expiry is required 
+                                       </small>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="lame"  placeholder="Residence Address"  formControlName="res_address_1"  required>
+
+                           <small [hidden]="myForm.controls.res_address_1.valid" class="text-danger">
+                                              res_address_1 is required.
+                                       </small>
+                    </div>
+
+                    <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="lame"  placeholder="Residence Address 2"  formControlName="res_address_2" >
+
+                         
+                    </div>
+
+                    
+                   <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="lame"  placeholder="Residence City"  formControlName="res_city"  required>
+
+                           <small [hidden]="myForm.controls.res_city.valid" class="text-danger">
+                                              Residence city is required.
+                                       </small>
+                    </div>
+                   
+                    <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="lame"  placeholder="Residence State"  formControlName="res_state"  required>
+
+                           <small [hidden]="myForm.controls.res_state.valid" class="text-danger">
+                                              Residence State is required.
+                                       </small>
+                    </div>
+                  
+                   <div class="col-md-12 w3-padding-4">
+                    	<input type="text" class="form-control input-lg" name="lame"  placeholder="Residence Zip Code"  formControlName="res_zipcode"  required>
+
+                           <small [hidden]="myForm.controls.res_zipcode.valid" class="text-danger">
+                                              Residence Zip Code is required.
+                                       </small>
+                    </div>
+                  
+                 
+
+
+
+                    <div class="col-md-12 w3-padding-4">
+                    	<button type="button" class="btn btn-danger btn-block btn-lg" [disabled]="!vazhipadForm.form.valid" (click) ="thirdstep()" >BECOME A DRIVER</button>
+                     </div>
+                    </div>
+                   </form>
+            
+
+                </div>
+            </div>
+         </div>
+    </section> 
+

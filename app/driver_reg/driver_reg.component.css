@@ -1,0 +1,42 @@
+.date
+{
+color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+          padding-right: 15px;
+    padding-left: 15px;
+    height: 44px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+        display: block;
+padding-top: 4px!important;
+    padding-bottom: 4px!important;    
+}
+
+select
+
+{
+
+    border-radius: 7px;
+    height: 40px;
+    width: 50%;
+    min-width: 150px;
+    max-width: 250px;
+
+}
+.ph_label
+{
+    color: #2e8e79;
+font-weight: 400;
+}
+.sp_ph
+{
+background-color: yellow;
+
+}
+select[_ngcontent-wsw-55]:active{
+        border-radius: 7px;
+}

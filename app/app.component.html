@@ -1,0 +1,109 @@
+
+
+
+<md-sidenav-layout>
+
+
+
+
+
+               <md-sidenav #sidenav mode="side" class="app-sidenav" opened="false">
+                         
+
+                                                              
+              
+                  <app-sidebar> </app-sidebar>
+
+
+             </md-sidenav>
+
+
+
+	<section class="sitepattern ">
+        	<div class="container">
+            	<div class="row">
+                    <div class="col-md-12">
+                    	<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed w3-text-white" data-toggle="collapse" data-target="#navbar">
+				<h3 style="margin: 0px;"><i class="fa fa-bars"></i></h3>
+			</button>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="navbar">
+        	
+			<ul class="nav navbar-nav navbar-right" style="    font-size: larger;">
+				<li class="dropdown"><a href="driver.html" >DRIVE</a></li>
+				<li class="dropdown side1"><a href="#" (click)="sidenav.toggle()" id="link">EXPLORE <i class="fa fa-chevron-down pull-right" id="chicon"></i></a></li>
+				<li class="dropdown"><a href="help.html">HELP</a></li>
+                <li class="dropdown"><a href="#" onclick="document.getElementById('model1').style.display='block'">SIGN IN</a></li>
+			</ul>
+			
+		</div>
+	</div>
+                    </div>
+                    <div class="col-md-12 header">
+                    
+                        
+                       	<a href="index.html"><img src="img/logo.png" class="img-responsive w3-animate-top"></a> 
+                    	
+                    </div>
+                </div>
+        	
+    </section>
+
+<router-outlet>
+  
+
+   </router-outlet>
+
+<app-footer> </app-footer>
+
+
+
+
+ <div id="model1" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top">
+      <header class="w3-container" style="background-color:#c4474a; color:white;">
+        <span onclick="document.getElementById('model1').style.display='none'"
+        class="w3-closebtn">&times;</span>
+        <h2>Login</h2>
+      </header>
+      <div class="w3-container">
+         <div class="main">
+
+      <h3>Please Log In, or <a href="signup.html">Sign Up</a></h3>
+   
+      <div class="login-or">
+        <hr class="hr-or">
+        <span class="span-or"></span>
+      </div>
+
+      <form role="form">
+        <div class="form-group">
+          <label for="inputUsernameEmail">Username or email</label>
+          <input type="text" class="form-control" id="inputUsernameEmail">
+        </div>
+        <div class="form-group">
+          <a class="pull-right" href="#">Forgot password?</a>
+          <label for="inputPassword">Password</label>
+          <input type="password" class="form-control" id="inputPassword">
+        </div>
+        <div class="checkbox pull-right">
+          <label>
+            <input type="checkbox">
+            Remember me </label>
+        </div>
+        <button type="submit" class="btn btn btn-danger">
+          Log In
+        </button>
+      </form>
+    
+    </div>
+      </div>
+      <footer class="w3-container" style="background-color:#c4474a; color:white;">
+        <p>Destinys's</p>
+      </footer>
+    </div>
+  </div>
+    
+</md-sidenav-layout>
